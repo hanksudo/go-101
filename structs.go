@@ -25,7 +25,7 @@ func main() {
 	p.X = 123
 	fmt.Println(v)
 
-	// new function - allocates zero value and return pointer
+	// 'new' function - allocates zero value and return pointer
 	u := new(Vertex) // var u *U = new(Vertex)
 	fmt.Println(u)
 	u.X, u.Y = 11, 9
