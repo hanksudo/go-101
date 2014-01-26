@@ -1,9 +1,10 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 )
 
 func main() {
-	fmt.Println("Hello! 世界!")
+
 }
