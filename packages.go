@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/hankwang/go-101/newmath"
+	"github.com/hanksudo/go-101/newmath"
 )
 
 func main() {
