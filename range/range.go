@@ -16,6 +16,7 @@ func main() {
 		pow[i] = 1 << uint(i)
 	}
 
+	// discard certain return values
 	for _, value := range pow {
 		fmt.Printf("%d\n", value)
 	}

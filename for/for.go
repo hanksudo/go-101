@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 
@@ -19,14 +17,25 @@ func main() {
 	for i := 0; i < 10; i++ {
 		sum += i
 	}
-	fmt.Println(sum)
+	fmt.Println("sum:", sum)
 
-	// sum2
+	// sum2 - identical to while
 	sum2 := 1
 	for sum2 <= 100 {
 		sum2 += sum2
 	}
-	fmt.Println(sum2)
+	fmt.Println("sum2:", sum2)
+
+	// break & continue
+	for i := 0; i < 10; i++ {
+		if i == 3 { // skip
+			continue
+		}
+		if i > 5 { // terminate
+			break
+		}
+		fmt.Println(i)
+	}
 
 	// forever
 	// for {
