@@ -14,6 +14,12 @@ My repository to practice Go Language (http://golang.org)
 brew install go
 ```
 
+## Coding style
+
+```
+variableName
+```
+
 ## Commands
 
 ```bash
