@@ -33,18 +33,18 @@ func main() {
 	fmt.Println(n)
 	fmt.Println(o)
 
-	// ---
-	p := make(map[string]int)
+	// --
+	numbers := make(map[string]int)
 
-	p["Answer"] = 42
-	fmt.Println("The value:", p["Answer"])
+	numbers["one"] = 1
+	numbers["three"] = 3
+	numbers["ten"] = 10
+	fmt.Println("The first number is:", numbers["one"])
+	fmt.Println("The third number is:", numbers["three"])
 
-	p["Answer"] = 48
-	fmt.Println("The value:", p["Answer"])
+	delete(numbers, "ten")
+	fmt.Println("The ten:", numbers["ten"])
 
-	delete(p, "Answer")
-	fmt.Println("The value:", p["Answer"])
-
-	v, ok := p["Answer"]
-	fmt.Println("The value:", v, "Present?", ok)
+	key, value := numbers["three"]
+	fmt.Println("The key:", key, "value:", value)
 }
