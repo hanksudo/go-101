@@ -1,3 +1,4 @@
+// define variables
 package main
 
 import "fmt"
