@@ -6,14 +6,17 @@ My repository to practice Go Language (http://golang.org)
 ## Reference
 
 - [Tour of Go](http://tour.golang.org/)
+- [Documentation](http://golang.org/doc/)
 
 ## Install Go
 
-http://golang.org/doc/install
+```bash
+brew install go
+```
 
 ## Run Program
 
-```
-$ go run hello.go
-$ go run functions.go
+```bash
+go run hello.go
+go run functions.go
 ```
