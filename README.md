@@ -30,6 +30,11 @@ go get github.com/hanksudo/go-101/hello
 go run hello/hello.go
 go run functions/functions.go
 
+# build program
+cd hello
+go build hello.go
+./hello
+
 # go install to $GOPATH/pkg
 go install newmath
 
