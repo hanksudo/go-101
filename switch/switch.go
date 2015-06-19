@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	x := 5
@@ -13,6 +16,8 @@ func main() {
 		fmt.Println("no matched")
 	}
 
+	// fallthrough
+	fmt.Println("")
 	y := 6
 	switch y {
 	case 4:
@@ -32,5 +37,30 @@ func main() {
 		fallthrough
 	default:
 		fmt.Println("no matched")
+	}
+
+	// detect weekday
+	fmt.Println("When's Saturday?")
+	today := time.Now().Weekday()
+	switch time.Saturday {
+	case today + 0:
+		fmt.Println("Today.")
+	case today + 1:
+		fmt.Println("Tomorrow.")
+	case today + 2:
+		fmt.Println("In two days.")
+	default:
+		fmt.Println("Too far away.")
+	}
+
+	// swtich with no condition (this construct can be clean way to write long if-then-else chains.)
+	t := time.Now()
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("Good morning!")
+	case t.Hour() < 17:
+		fmt.Println("Good afternoon.")
+	default:
+		fmt.Println("Good evening.")
 	}
 }

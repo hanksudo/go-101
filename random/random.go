@@ -10,6 +10,7 @@ import (
 )
 
 func main() {
+	fmt.Println("Randome number without seed", rand.Intn(10))
 	rand.Seed(time.Now().UnixNano())
 	fmt.Println("My lucky number is", rand.Intn(10))
 	fmt.Printf("Now you have %g problems.\n", math.Nextafter(2, 3))
