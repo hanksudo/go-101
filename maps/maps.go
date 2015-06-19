@@ -29,22 +29,26 @@ func main() {
 		40.68433, -74.39967,
 	}
 	fmt.Println(m["Bell Labs"])
-
 	fmt.Println(n)
 	fmt.Println(o)
 
 	// --
 	numbers := make(map[string]int)
 
+	// insert or update element
 	numbers["one"] = 1
 	numbers["three"] = 3
 	numbers["ten"] = 10
 	fmt.Println("The first number is:", numbers["one"])
 	fmt.Println("The third number is:", numbers["three"])
 
+	// delete element
 	delete(numbers, "ten")
 	fmt.Println("The ten:", numbers["ten"])
 
-	key, value := numbers["three"]
-	fmt.Println("The key:", key, "value:", value)
+	// Test key exists
+	elem, ok := numbers["three"]
+	fmt.Println("The key:", elem, "ok:", ok)
+	elem, ok = numbers["four"]
+	fmt.Println("The key:", elem, "ok:", ok)
 }

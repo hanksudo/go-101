@@ -32,7 +32,7 @@ func main() {
 	fmt.Println("ar1 ==", ar1)
 	fmt.Println("ar2 ==", ar2)
 
-	slice := []int{3, 3, 4, 5, 6, 7, 8}
+	slice := []int{1, 2, 3, 4, 5, 6, 7, 8}
 	fmt.Println("slice ==", slice)
 	fmt.Println("slice[:] ==", slice[:])
 	fmt.Println("slice[0:7] ==", slice[0:7])
