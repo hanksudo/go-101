@@ -1,14 +1,9 @@
 go-101
 ======
 
-My repository to practice Go Language (http://golang.org)
+My repository to learn Go Language (http://golang.org)
 
-## Reference
-
-- [Tour of Go](http://tour.golang.org/)
-- [Documentation](http://golang.org/doc/)
-
-## Install Go
+## Install Go (on OSX)
 
 ```bash
 brew install go
@@ -20,7 +15,7 @@ brew install go
 variableName
 ```
 
-## Commands
+## Basic Commands
 
 ```bash
 # download from remote (download into both ./src and ./bin)
@@ -57,3 +52,8 @@ go list
 go list all
 go list -json all
 ```
+
+## Reference
+
+- [Go Documentation](http://golang.org/doc/)
+- [Tour of Go](http://tour.golang.org/)
