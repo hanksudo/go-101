@@ -57,3 +57,4 @@ go list -json all
 
 - [Go Documentation](http://golang.org/doc/)
 - [Tour of Go](http://tour.golang.org/)
+- [Tour of Go - exercise solutions](https://github.com/golang/tour/tree/master/solutions)
