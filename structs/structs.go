@@ -10,6 +10,10 @@ type Vertex struct {
 }
 
 func main() {
+	fmt.Println(Vertex{1, 2})
+	fmt.Println(Vertex{})     // {0, 0}
+	fmt.Println(Vertex{X: 3}) // {3, 0}
+
 	v := Vertex{1, 2}
 	fmt.Println(v)
 	v.X = 4
