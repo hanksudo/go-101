@@ -28,4 +28,6 @@ func main() {
     世界！`
 	fmt.Println(multi)
 
+	fmt.Println(string(77)) // M
+
 }

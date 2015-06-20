@@ -1,3 +1,4 @@
+// http://tour.golang.org/methods/11
 package main
 
 import "golang.org/x/tour/reader"
