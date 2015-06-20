@@ -5,10 +5,10 @@ import (
 )
 
 func fibonacci() func() int {
-	f, g := 0, 1
+	first, next := 0, 1
 	return func() int {
-		f, g = g, f+g
-		return f
+		first, next = next, first+next
+		return next - first
 	}
 }
 
