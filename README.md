@@ -55,9 +55,9 @@ variableName
 
 ## Reference
 
-- [Go Documentation](http://golang.org/doc/)
 - [Tour of Go](http://tour.golang.org/)
 - [Tour of Go - exercise solutions](https://github.com/golang/tour/tree/master/solutions)
+- [How to Write Go Code - The Go Programming Language](http://golang.org/doc/code.html)
 - [Effective Go](http://golang.org/doc/effective_go.html)
 - [Writing Web Applications - The Go Programming Language](http://golang.org/doc/articles/wiki/)
 - [Share Memory By Communicating - The Go Programming Language](http://golang.org/doc/codewalk/sharemem/)
