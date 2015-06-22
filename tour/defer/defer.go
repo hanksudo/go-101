@@ -11,11 +11,11 @@ func main() {
 	defer fmt.Println("World")
 	fmt.Println("Hello")
 
-	// stacking defers (last-in-first-out)
+	// stacking defers (LIFO - last-in-first-out)
 	for i := 0; i < 10; i++ {
 		defer fmt.Println(i)
 	}
-	fmt.Println("done")
 
+	fmt.Println("done")
 	fmt.Println(add()) // 2
 }
