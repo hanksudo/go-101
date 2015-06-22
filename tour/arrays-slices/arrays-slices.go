@@ -54,7 +54,8 @@ func main() {
 	printSlice("z ==", z)
 	r := z[2:5]
 	printSlice("r ==", r)
-	rr := append(r, 1, 2)
+	// exceeds capacity, x is reallocated
+	rr := append(x, 1, 2)
 	printSlice("rr ==", rr)
 
 	// zero value of a slice is nil
