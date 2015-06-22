@@ -14,11 +14,11 @@ func main() {
 	}
 	defer f.Close()
 
-	// var result []byte
-	buf := make([]byte, 5)
+	var result []byte
+	buf := make([]byte, 1)
 	for {
 		n, err := f.Read(buf)
-		// result = append(result, buf[0:])
+		result = append(result, buf[:n]...)
 		fmt.Printf("n=%v err=%v buf=%v\n", n, err, buf)
 		fmt.Printf("buf[:n] = %q\n", buf[:n])
 		if err == io.EOF {
@@ -26,4 +26,5 @@ func main() {
 			break
 		}
 	}
+	fmt.Println("result=", string(result))
 }
