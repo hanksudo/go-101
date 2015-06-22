@@ -9,17 +9,11 @@ My repository to learn Go Language (http://golang.org)
 brew install go
 ```
 
-## Coding style
-
-```
-variableName
-```
-
 ## Basic Commands
 
 ```bash
 # download from remote (download into both ./src and ./bin)
-go get github.com/hanksudo/go-101/hello
+go get github.com/hanksudo/go-101/tour/hello
 
 # run program
 go run hello/hello.go
@@ -53,8 +47,18 @@ go list all
 go list -json all
 ```
 
+## Coding style
+
+```
+variableName
+```
+
 ## Reference
 
 - [Go Documentation](http://golang.org/doc/)
 - [Tour of Go](http://tour.golang.org/)
 - [Tour of Go - exercise solutions](https://github.com/golang/tour/tree/master/solutions)
+- [Effective Go](http://golang.org/doc/effective_go.html)
+- [Writing Web Applications - The Go Programming Language](http://golang.org/doc/articles/wiki/)
+- [Share Memory By Communicating - The Go Programming Language](http://golang.org/doc/codewalk/sharemem/)
+- [First-Class Functions in Go - The Go Programming Language](http://golang.org/doc/codewalk/functions/)
