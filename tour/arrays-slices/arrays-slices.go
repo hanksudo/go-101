@@ -58,6 +58,12 @@ func main() {
 	rr := append(x, 1, 2)
 	printSlice("rr ==", rr)
 
+	// append slice to slice
+	s1 := []int{1, 2, 3}
+	s2 := []int{4, 5, 6}
+	s1 = append(s1, s2...)
+	fmt.Println("s1 ==", s1)
+
 	// zero value of a slice is nil
 	var t []int
 	printSlice("t ==", t)
