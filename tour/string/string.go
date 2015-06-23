@@ -1,8 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
+	str := "UPPER CASE STRINGS"
+	lower := strings.ToLower(str)
+	fmt.Println("lower string:", lower)
+
 	hello := "Hello, 世界！"
 	hello2 := [5]byte{'h', 'e', 'l', 'l', 'o'}
 
@@ -29,5 +36,4 @@ func main() {
 	fmt.Println(multi)
 
 	fmt.Println(string(77)) // M
-
 }
