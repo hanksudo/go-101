@@ -1,7 +1,11 @@
 // define variables
 package main
 
-import "fmt"
+import (
+	"os"
+
+	"fmt"
+)
 
 var i int
 var c, python, java bool
@@ -11,6 +15,12 @@ var april, janurary int = 4, 1
 // If an initializer is present, the type can be omitted; the variable will take the type of the initializer.
 var j = 2
 var ruby, golang, node = true, false, "no!"
+
+var (
+	home   = os.Getenv("HOME")
+	user   = os.Getenv("USER")
+	gopath = os.Getenv("GOPATH")
+)
 
 func main() {
 	// define without var and type, this can only use inside of functions
@@ -22,4 +32,5 @@ func main() {
 	fmt.Println(j, ruby, golang, node)
 	fmt.Println(angular, backbone, ember)
 	fmt.Println(may)
+	fmt.Println(home, user, gopath)
 }
