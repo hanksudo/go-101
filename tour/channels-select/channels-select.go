@@ -1,9 +1,7 @@
 // http://tour.golang.org/concurrency/5
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func fibonacci(c, quit chan int) {
 	x, y := 0, 1

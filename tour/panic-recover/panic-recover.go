@@ -1,9 +1,7 @@
 // http://blog.golang.org/defer-panic-and-recover
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	f()
