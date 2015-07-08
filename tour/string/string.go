@@ -36,4 +36,10 @@ func main() {
 	fmt.Println(multi)
 
 	fmt.Println(string(77)) // M
+
+	// trim strings
+	stringWithSpace1 := "abc   "
+	stringWithSpace2 := "   abc"
+	fmt.Println(stringWithSpace1, strings.TrimSpace(stringWithSpace1))
+	fmt.Println(stringWithSpace2, strings.TrimSpace(stringWithSpace2))
 }
