@@ -59,6 +59,15 @@ func main() {
 	asciiStr := "ABC"
 	fmt.Println(asciiStr[0]) // 65
 	fmt.Println(string(82))  // R
+	// ABCDEFGHIJKLMNOPQRSTUVWXYZ
+	for i := 65; i <= 90; i++ {
+		fmt.Print(string(i))
+	}
+	fmt.Println()
+	for i := 97; i <= 122; i++ {
+		fmt.Print(string(i))
+	}
+	fmt.Println()
 
 	// replace
 	longStr := "Apple Banana Orange Apple"
