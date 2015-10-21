@@ -53,6 +53,13 @@ go list -json all
 variableName
 ```
 
+## Run go program when file modified
+
+```bash
+go get github.com/hanksudo/gowatch
+gowatch -f main.go
+```
+
 ## Reference
 
 - [Tour of Go](http://tour.golang.org/)
