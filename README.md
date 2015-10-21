@@ -62,3 +62,4 @@ variableName
 - [Writing Web Applications - The Go Programming Language](http://golang.org/doc/articles/wiki/)
 - [Share Memory By Communicating - The Go Programming Language](http://golang.org/doc/codewalk/sharemem/)
 - [First-Class Functions in Go - The Go Programming Language](http://golang.org/doc/codewalk/functions/)
+- [逆引きGolang](http://ashitani.jp/golangtips/index.html)
