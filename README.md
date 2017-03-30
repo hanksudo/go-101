@@ -1,7 +1,6 @@
-go-101
-======
+# go-101
 
-My repository to learn Go Language (http://golang.org)
+My repository to learn Go Language <http://golang.org>
 
 ## Install Go (on OSX)
 
@@ -49,9 +48,7 @@ go list -json all
 
 ## Coding style
 
-```
-variableName
-```
+    variableName
 
 ## Run go program when file modified
 

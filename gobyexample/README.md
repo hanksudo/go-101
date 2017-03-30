@@ -1,5 +1,7 @@
 # Go by Example
 
+<https://gobyexample.com>
+
 ## Run
 
 ```bash
@@ -8,13 +10,9 @@ go build 01-hello-world.go
 ./01-hello-world.go
 ```
 
-## Link
-
-https://gobyexample.com
-
 ## List
 
-```
+```txt
  0 Hello World
  1 Values
  2 Variables
