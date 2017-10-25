@@ -7,28 +7,33 @@ import (
 	"os"
 )
 
-type Counter int
-type Chan chan *http.Request
+type counter int
+type _chan chan *http.Request
 
-func (ctr *Counter) ServeHTTP(w http.ResponseWriter, req *http.Request) {
+func (ctr *counter) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	*ctr++
 	fmt.Fprintf(w, "counter = %d\n", *ctr)
 }
 
-func (ch Chan) ServeHTTP(w http.ResponseWriter, req *http.Request) {
+func (ch _chan) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	ch <- req
 	fmt.Fprint(w, "notification sent")
 }
 
 // Argument Server.
-func ArgServer(w http.ResponseWriter, req *http.Request) {
+func argServer(w http.ResponseWriter, req *http.Request) {
 	fmt.Fprintln(w, os.Args)
 }
 
+func headerHandler(w http.ResponseWriter, req *http.Request) {
+	fmt.Fprintln(w, req.Header)
+}
+
 func main() {
-	ctr := new(Counter)
+	ctr := new(counter)
 	http.Handle("/counter", ctr)
-	http.Handle("/args", http.HandlerFunc(ArgServer))
+	http.Handle("/args", http.HandlerFunc(argServer))
+	http.Handle("/header", http.HandlerFunc(headerHandler))
 
 	err := http.ListenAndServe(":4000", nil)
 	if err != nil {
