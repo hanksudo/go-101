@@ -15,8 +15,8 @@ brew install go
 go get github.com/hanksudo/go-101/tour/hello
 
 # run program
-go run hello/hello.go
-go run functions/functions.go
+go run tour/hello/hello.go
+go run tour/functions/functions.go
 
 # build program
 cd hello
@@ -28,6 +28,9 @@ go install newmath
 
 # go install to $GOPATH/bin
 go install mathapp
+
+# test code
+go test github.com/hanksudo/go-101/tour/stringutil
 
 # format code syntax
 go fmt -w
