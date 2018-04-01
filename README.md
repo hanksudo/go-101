@@ -1,8 +1,8 @@
 # go-101
 
-My repository to learn Go Language <http://golang.org>
+My repository to learn Go Language <https://golang.org>
 
-## Install Go (on OSX)
+## Install Go (on OS X)
 
 ```bash
 brew install go
@@ -67,7 +67,11 @@ gowatch -f main.go
 - [How to Write Go Code - The Go Programming Language](http://golang.org/doc/code.html)
 - [Effective Go](http://golang.org/doc/effective_go.html)
 - [Writing Web Applications - The Go Programming Language](http://golang.org/doc/articles/wiki/)
+- [preface · Build web application with Golang](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/preface.html)
 - [Share Memory By Communicating - The Go Programming Language](http://golang.org/doc/codewalk/sharemem/)
 - [First-Class Functions in Go - The Go Programming Language](http://golang.org/doc/codewalk/functions/)
 - [逆引きGolang](http://ashitani.jp/golangtips/index.html)
 - [GitHub - fatih/vim-go-tutorial: Tutorial for vim-go](https://github.com/fatih/vim-go-tutorial)
+- [JustForFunc: Programming in Go - YouTube](https://www.youtube.com/channel/UC_BzFbxG2za3bp5NRRRXJSw)
+- [Frontmatter | Go Bootcamp |  Softcover.io](http://www.golangbootcamp.com/book/)
+- [GitHub - enocom/gopher-reading-list: A curated selection of blog posts on Go](https://github.com/enocom/gopher-reading-list)
