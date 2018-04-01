@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// Share type(x int, y int) or (x, y int)
+// (x int, y int) = (x, y int)
 func add(x int, y int) int {
 	return x + y
 }

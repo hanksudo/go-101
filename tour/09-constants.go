@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-const Pi float32 = 3.1415926
+const Pi = 3.1415926
 
 func main() {
 	const World = "世界"
@@ -13,5 +13,5 @@ func main() {
 
 	const Truth = true
 	fmt.Println("Go rule?", Truth)
-	mt.Println(a, b, c)
+	fmt.Println(a, b, c)
 }

@@ -1,5 +1,5 @@
 // A Tour of Go Exercise
-// http://tour.golang.org/#25
+// https://tour.golang.org/flowcontrol/8
 package main
 
 import (
@@ -7,12 +7,13 @@ import (
 	"math"
 )
 
+// Sqrt - function to return sqrt
 func Sqrt(x float64) float64 {
 	z := 1.0
 	tmp := 0.0
-	for math.Abs(z-tmp) > 1e-6 {
+	for math.Abs(z-tmp) > 1e-7 {
 		tmp = z
-		z = z - ((math.Pow(z, 2) - x) / (2 * z))
+		z -= (math.Pow(z, 2) - x) / (2 * z)
 	}
 	return z
 }

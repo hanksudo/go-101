@@ -10,4 +10,5 @@ func main() {
 	var f float64 = math.Sqrt(float64(3*3 + 4*4)) // f := math.Sqrt(float64(3*3 + 4*4))
 	var z int = int(f)                            // z := int(f)
 	fmt.Println(x, f, y, z)
+	fmt.Printf("f is of type %T", f)
 }

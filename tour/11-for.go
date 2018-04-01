@@ -1,17 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-
-	// Multiplication
-	for i := 2; i < 10; i++ {
-		for j := 1; j < 10; j++ {
-			fmt.Printf("%d x %d = %d \n", i, j, i*j)
-		}
-		fmt.Println()
-	}
-
 	// sum
 	sum := 0
 	for i := 0; i < 10; i++ {
@@ -21,7 +14,7 @@ func main() {
 
 	// sum2 - identical to while
 	sum2 := 1
-	for sum2 <= 100 {
+	for sum2 < 1000 {
 		sum2 += sum2
 	}
 	fmt.Println("sum2:", sum2)
@@ -35,6 +28,14 @@ func main() {
 			break
 		}
 		fmt.Println(i)
+	}
+
+	// Multiplication
+	for i := 2; i < 10; i++ {
+		for j := 1; j < 10; j++ {
+			fmt.Printf("%d x %d = %d \n", i, j, i*j)
+		}
+		fmt.Println()
 	}
 
 	// forever
