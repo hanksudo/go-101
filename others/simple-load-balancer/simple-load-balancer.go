@@ -1,5 +1,19 @@
 package main
 
+import (
+	"fmt"
+	"time"
+)
+
+func sendLotsOfWork(in chan *Work) {
+
+}
+
+func receiveLotsOfResults(out chan *Work) {
+
+}
+
+// Work - Data struct
 type Work struct {
 	x, y, z int
 }
@@ -7,20 +21,17 @@ type Work struct {
 func worker(in <-chan *Work, out chan<- *Work) {
 	for w := range in {
 		w.z = w.x * w.y
-		Sleep(w.z)
+		fmt.Println(w.z)
+		time.Sleep(time.Duration(w.z))
 		out <- w
 	}
 }
 
-func Run() {
+func main() {
 	in, out := make(chan *Work), make(chan *Work)
-	for i := 0; i < NumWorkers; i++ {
+	for i := 0; i < 10; i++ {
 		go worker(in, out)
 	}
 	go sendLotsOfWork(in)
 	receiveLotsOfResults(out)
-}
-
-func main() {
-
 }
