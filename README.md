@@ -60,7 +60,7 @@ go get github.com/hanksudo/gowatch
 gowatch -f main.go
 ```
 
-## Reference
+## References
 
 - [Tour of Go](http://tour.golang.org/)
 - [Tour of Go - exercise solutions](https://github.com/golang/tour/tree/master/solutions)
