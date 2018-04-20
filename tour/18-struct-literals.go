@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// Vertex - struct
 type Vertex struct {
 	X, Y int
 }
@@ -12,7 +13,7 @@ var (
 	p = Vertex{1, 2}  // has type Vertex
 	q = &Vertex{1, 2} // has type *Vertext
 	r = Vertex{X: 1}  // Y:0 is implicit
-	s = Vertex{}      // X: and Y:0
+	s = Vertex{}      // X:0 and Y:0
 )
 
 func main() {

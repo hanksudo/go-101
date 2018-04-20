@@ -8,6 +8,7 @@ func main() {
 	var a [2]string
 	a[0] = "I'm" // array is 0-based
 	a[1] = " Hank"
+	// a[2] = "Hello" // out of bounds for 2-element array
 	fmt.Println(a[0], a[1])
 	fmt.Println(a)
 
