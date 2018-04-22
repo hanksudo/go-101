@@ -32,14 +32,14 @@ func main() {
 	fmt.Println()
 
 	// pointer, will replace v.X
-	q := &v
-	q.X = 1e9 // equals to (*q).X = 1e9
+	p := &v
+	p.X = 1e9 // equals to (*p).X = 1e9
 	fmt.Println(v)
 	fmt.Println()
 
 	// non-pointer
-	p := v
-	p.X = 123
+	q := v
+	q.X = 123
 	fmt.Println(v)
 	fmt.Println()
 
