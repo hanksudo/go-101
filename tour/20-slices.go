@@ -20,34 +20,4 @@ func main() {
 	fmt.Println("ar1 ==", ar1)
 	fmt.Println("ar2 ==", ar2)
 	fmt.Println()
-
-	// 'make' function - slices created
-	x := make([]int, 5)
-	printSlice("x", x)
-	y := make([]int, 0, 5)
-	printSlice("y", y)
-	z := y[:2]
-	printSlice("z ==", z)
-	r := z[2:5]
-	printSlice("r ==", r)
-	// exceeds capacity, x is reallocated
-	rr := append(x, 1, 2)
-	printSlice("rr ==", rr)
-	fmt.Println()
-
-	// append slice to slice
-	s1 := []int{1, 2, 3}
-	s2 := []int{4, 5, 6}
-	s1 = append(s1, s2...)
-	fmt.Println("s1 ==", s1)
-	fmt.Println()
-
-	// zero value of a slice is nil
-	var t []int
-	printSlice("t ==", t)
-	fmt.Println(t == nil)
-}
-
-func printSlice(s string, x []int) {
-	fmt.Printf("%s len=%d cap=%d %v\n", s, len(x), cap(x), x)
 }
