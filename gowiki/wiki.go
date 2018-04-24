@@ -5,8 +5,18 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"path/filepath"
 	"regexp"
 )
+
+const (
+	templatePath = "tmpl"
+	dataPath     = "data"
+)
+
+var templates = template.Must(template.ParseGlob(filepath.Join(templatePath, "*.html")))
+var validPath = regexp.MustCompile(`^/(edit|view|save)/(\w+)$`)
+var validLink = regexp.MustCompile("\\[([a-zA-Z0-9]+)\\]")
 
 // Page - basic page data structure
 type Page struct {
@@ -15,12 +25,12 @@ type Page struct {
 }
 
 func (p *Page) save() error {
-	filename := "data/" + p.Title + ".txt"
+	filename := filepath.Join(dataPath, p.Title+".txt")
 	return ioutil.WriteFile(filename, p.Body, 0600)
 }
 
 func loadPage(title string) (*Page, error) {
-	filename := "data/" + title + ".txt"
+	filename := filepath.Join(dataPath, title+".txt")
 	body, err := ioutil.ReadFile(filename)
 	if err != nil {
 		return nil, err
@@ -28,16 +38,13 @@ func loadPage(title string) (*Page, error) {
 	return &Page{Title: title, Body: body}, nil
 }
 
-var templates = template.Must(template.ParseGlob("tmpl/*.html"))
-
 func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
 	err := templates.ExecuteTemplate(w, tmpl+".html", p)
+
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
 }
-
-var validPath = regexp.MustCompile(`^/(edit|view|save)/(\w+)$`)
 
 func makeHandler(fn func(http.ResponseWriter, *http.Request, string)) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
