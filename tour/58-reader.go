@@ -8,11 +8,12 @@ import (
 
 func main() {
 	r := strings.NewReader("Hello, Reader!")
-	buffer := make([]byte, 8)
+
+	b := make([]byte, 8)
 	for {
-		n, err := r.Read(buffer)
-		fmt.Printf("n=%v err=%v buffer=%v\n", n, err, buffer)
-		fmt.Printf("buffer[:n] = %q\n", buffer[:n])
+		n, err := r.Read(b)
+		fmt.Printf("n=%v err=%v b=%v\n", n, err, b)
+		fmt.Printf("b[:n] = %q\n", b[:n])
 		if err == io.EOF {
 			fmt.Println("Done!")
 			break
