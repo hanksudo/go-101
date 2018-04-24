@@ -1,13 +1,13 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
 	"io/ioutil"
 	"log"
 	"net/http"
 )
 
+// Page - basic page data structure
 type Page struct {
 	Title string
 	Body  []byte
@@ -27,14 +27,15 @@ func loadPage(title string) (*Page, error) {
 	return &Page{Title: title, Body: body}, nil
 }
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
+	t, _ := template.ParseFiles(tmpl + ".html")
+	t.Execute(w, p)
 }
 
 func viewHandler(w http.ResponseWriter, r *http.Request) {
 	title := r.URL.Path[len("/view/"):]
 	p, _ := loadPage(title)
-	fmt.Fprintf(w, "<h1>%s</h1><div>%s</div>", p.Title, p.Body)
+	renderTemplate(w, "view", p)
 }
 
 func editHandler(w http.ResponseWriter, r *http.Request) {
@@ -43,8 +44,7 @@ func editHandler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		p = &Page{Title: title}
 	}
-	t, _ := template.ParseFiles("edit.html")
-	t.Execute(w, p)
+	renderTemplate(w, "edit", p)
 }
 
 func main() {
@@ -53,7 +53,7 @@ func main() {
 	// p1.save()
 	// p2, _ := loadPage("TestPage")
 	// fmt.Println(string(p2.Body))
-	http.HandleFunc("/", handler)
+
 	http.HandleFunc("/view/", viewHandler)
 	http.HandleFunc("/edit/", editHandler)
 	// http.HandleFunc("/save/", saveHandler)
