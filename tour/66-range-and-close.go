@@ -10,19 +10,21 @@ func fibonacci(n int, c chan int) {
 		c <- x
 		x, y = y, x+y
 	}
+	// Closing is only necessary when the receiver must be told
+	// there are no more values coming, such as to terminate ta range loop.
 	close(c)
 }
 
 func main() {
-	ch := make(chan int, 10)
-	go fibonacci(cap(ch), ch)
+	c := make(chan int, 10)
+	go fibonacci(cap(c), c)
 
 	// test whether chanel has been closed
-	v, ok := <-ch
+	v, ok := <-c
 	fmt.Println(v, ok)
 
 	// receives values from channel until it's closed
-	for i := range ch {
+	for i := range c {
 		fmt.Println(i)
 	}
 }
