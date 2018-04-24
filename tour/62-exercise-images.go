@@ -1,3 +1,4 @@
+// Exercise: Images
 package main
 
 import (
