@@ -1,6 +1,6 @@
 # go-101
 
-My repository to learn Go Language <https://golang.org>
+Learn Go Programming Language <https://golang.org>
 
 ## Install Go (on OS X)
 
@@ -75,3 +75,4 @@ gowatch -f main.go
 - [JustForFunc: Programming in Go - YouTube](https://www.youtube.com/channel/UC_BzFbxG2za3bp5NRRRXJSw)
 - [Frontmatter | Go Bootcamp |  Softcover.io](http://www.golangbootcamp.com/book/)
 - [GitHub - enocom/gopher-reading-list: A curated selection of blog posts on Go](https://github.com/enocom/gopher-reading-list)
+- [GopherAcademy - Conferences, Training, and Community](https://www.gopheracademy.com/)
