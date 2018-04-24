@@ -1,3 +1,4 @@
+// A goroutine is a lightweight thread managed by the Go runtime.
 // http://tour.golang.org/concurrency/1
 package main
 

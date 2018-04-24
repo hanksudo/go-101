@@ -15,11 +15,10 @@ func sum(a []int, ch chan int) {
 func main() {
 	a := []int{7, 2, 8, -9, 4, 0}
 
-	ch := make(chan int)
-	go sum(a[:len(a)/2], ch)
-	go sum(a[len(a)/2:], ch)
+	c := make(chan int)
+	go sum(a[:len(a)/2], c)
+	go sum(a[len(a)/2:], c)
 
-	x, y := <-ch, <-ch // receive from c
-	// close(ch)
-	fmt.Println(x, y, x+y) // 17 -5 12
+	x, y := <-c, <-c // receive from c
+	fmt.Println(x, y, x+y)
 }
