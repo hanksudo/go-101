@@ -14,7 +14,11 @@ const (
 	dataPath     = "data"
 )
 
-var templates = template.Must(template.ParseGlob(filepath.Join(templatePath, "*.html")))
+var templates = template.Must(template.New("main").Funcs(
+	template.FuncMap{"unescaped": func(x string) interface{} {
+		return template.HTML(validLink.ReplaceAllString(x, "<a href=\"$1\">[$1]</a>"))
+	}},
+).ParseGlob(filepath.Join(templatePath, "*.html")))
 var validPath = regexp.MustCompile(`^/(edit|view|save)/(\w+)$`)
 var validLink = regexp.MustCompile("\\[([a-zA-Z0-9]+)\\]")
 
@@ -40,7 +44,6 @@ func loadPage(title string) (*Page, error) {
 
 func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
 	err := templates.ExecuteTemplate(w, tmpl+".html", p)
-
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
