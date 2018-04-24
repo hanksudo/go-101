@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/hanksudo/go-101/stringutil"
+
+	"github.com/hanksudo/go-101/tour/stringutil"
 )
 
 func main() {

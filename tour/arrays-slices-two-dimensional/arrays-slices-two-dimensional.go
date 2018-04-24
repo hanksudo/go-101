@@ -1,3 +1,4 @@
+// https://golang.org/doc/effective_go.html#two_dimensional_slices
 package main
 
 import (
