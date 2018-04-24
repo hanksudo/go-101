@@ -1,4 +1,3 @@
-// http://tour.golang.org/methods/9
 package main
 
 import (
@@ -6,6 +5,7 @@ import (
 	"math"
 )
 
+// ErrNegativeSqrt ...
 type ErrNegativeSqrt float64
 
 func (e ErrNegativeSqrt) Error() string {
@@ -16,6 +16,7 @@ const (
 	delta = 1e-10
 )
 
+// Sqrt ...
 func Sqrt(x float64) (float64, error) {
 	if x < 0 {
 		return 0, ErrNegativeSqrt(x)

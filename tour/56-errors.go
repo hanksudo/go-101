@@ -1,4 +1,3 @@
-// http://tour.golang.org/methods/8
 package main
 
 import (
@@ -26,10 +25,12 @@ func run() error {
 		"it didn't work",
 	}
 }
+
 func main() {
 	if err := run(); err != nil {
 		fmt.Println(err)
 	}
+	fmt.Println("")
 
 	i, err := strconv.Atoi("a")
 	if err != nil {
