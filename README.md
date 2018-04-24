@@ -76,3 +76,4 @@ gowatch -f main.go
 - [Frontmatter | Go Bootcamp |  Softcover.io](http://www.golangbootcamp.com/book/)
 - [GitHub - enocom/gopher-reading-list: A curated selection of blog posts on Go](https://github.com/enocom/gopher-reading-list)
 - [GopherAcademy - Conferences, Training, and Community](https://www.gopheracademy.com/)
+- [Concurrency, Goroutines and GOMAXPROCS Go, (Golang) Programming - Blog - Ardan Labs](https://www.ardanlabs.com/blog/2014/01/concurrency-goroutines-and-gomaxprocs.html)
