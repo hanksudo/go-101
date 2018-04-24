@@ -1,4 +1,5 @@
-// http://tour.golang.org/methods/4
+// Interfaces
+// http://tour.golang.org/methods/9
 package main
 
 import (
@@ -14,6 +15,7 @@ func main() {
 	var a Abser
 	f := MyFloat(-math.Sqrt2)
 	v := Vertex{3, 4}
+
 	a = f  // a MyFloat implements Abser
 	a = &v // a *Vertex implements Abser
 
