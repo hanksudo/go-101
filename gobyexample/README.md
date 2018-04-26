@@ -1,6 +1,6 @@
 # Go by Example
 
-<https://gobyexample.com>
+- [Go by Example](https://gobyexample.com)
 
 ## Run
 
@@ -8,6 +8,13 @@
 go run 01-hello-world.go
 go build 01-hello-world.go
 ./01-hello-world.go
+```
+
+## Rerun Go program when file modified
+
+```bash
+go get -u github.com/hanksudo/gowatch
+gowatch -f main.go
 ```
 
 ## List
