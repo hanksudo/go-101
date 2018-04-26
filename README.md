@@ -8,6 +8,14 @@ Learn Go Programming Language <https://golang.org>
 brew install go
 ```
 
+## Folder structures
+
+- tour - [Tour of Go](http://tour.golang.org/)
+- effective-go - [Effective Go](http://golang.org/doc/effective_go.html)
+- gobyexample - [Go by Example](https://gobyexample.com/)
+- gowiki - [Writing Web Applications - The Go Programming Language](https://golang.org/doc/articles/wiki/)
+
+
 ## Basic Commands
 
 ```bash
@@ -49,23 +57,18 @@ go list all
 go list -json all
 ```
 
-## Coding style
-
-    variableName
-
-## Run go program when file modified
+## Rerun Go program when file modified
 
 ```bash
-go get github.com/hanksudo/gowatch
+go get -u github.com/hanksudo/gowatch
 gowatch -f main.go
 ```
 
 ## References
 
-- [Tour of Go](http://tour.golang.org/)
 - [Tour of Go - exercise solutions](https://github.com/golang/tour/tree/master/solutions)
+- [GitHub - enocom/gopher-reading-list: A curated selection of blog posts on Go](https://github.com/enocom/gopher-reading-list)
 - [How to Write Go Code - The Go Programming Language](http://golang.org/doc/code.html)
-- [Effective Go](http://golang.org/doc/effective_go.html)
 - [Writing Web Applications - The Go Programming Language](http://golang.org/doc/articles/wiki/)
 - [preface · Build web application with Golang](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/preface.html)
 - [Share Memory By Communicating - The Go Programming Language](http://golang.org/doc/codewalk/sharemem/)
@@ -74,6 +77,5 @@ gowatch -f main.go
 - [GitHub - fatih/vim-go-tutorial: Tutorial for vim-go](https://github.com/fatih/vim-go-tutorial)
 - [JustForFunc: Programming in Go - YouTube](https://www.youtube.com/channel/UC_BzFbxG2za3bp5NRRRXJSw)
 - [Frontmatter | Go Bootcamp |  Softcover.io](http://www.golangbootcamp.com/book/)
-- [GitHub - enocom/gopher-reading-list: A curated selection of blog posts on Go](https://github.com/enocom/gopher-reading-list)
 - [GopherAcademy - Conferences, Training, and Community](https://www.gopheracademy.com/)
 - [Concurrency, Goroutines and GOMAXPROCS Go, (Golang) Programming - Blog - Ardan Labs](https://www.ardanlabs.com/blog/2014/01/concurrency-goroutines-and-gomaxprocs.html)
