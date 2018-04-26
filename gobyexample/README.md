@@ -20,69 +20,69 @@ gowatch -f main.go
 ## List
 
 ```txt
- 0 Hello World
- 1 Values
- 2 Variables
- 3 Constants
- 4 For
- 5 If/Else
- 6 Switch
- 7 Arrays
- 8 Slices
- 9 Maps
-10 Range
-11 Functions
-12 Multiple Return Values
-13 Variadic Functions
-14 Closures
-15 Recursion
-16 Pointers
-17 Structs
-18 Methods
-19 Interfaces
-20 Errors
-21 Goroutines
-22 Channels
-23 Channel Buffering
-24 Channel Synchronization
-25 Channel Directions
-26 Select
-27 Timeouts
-28 Non-Blocking Channel Operations
-29 Closing Channels
-30 Range over Channels
-31 Timers
-32 Tickers
-33 Worker Pools
-34 Rate Limiting
-35 Atomic Counters
-36 Mutexes
-37 Stateful Goroutines
-38 Sorting
-39 Sorting by Functions
-40 Panic
-41 Defer
-42 Collection Functions
-43 String Functions
-44 String Formatting
-45 Regular Expressions
-46 JSON
-47 Time
-48 Epoch
-49 Time Formatting / Parsing
-50 Random Numbers
-51 Number Parsing
-52 URL Parsing
-53 SHA1 Hashes
-54 Base64 Encoding
-55 Reading Files
-56 Writing Files
-57 Line Filters
-58 Command-Line Arguments
-59 Command-Line Flags
-60 Environment Variables
-61 Spawning Processes
-62 Exec'ing Processes
-63 Signals
-64 Exit
+ 1 Hello World
+ 2 Values
+ 3 Variables
+ 4 Constants
+ 5 For
+ 6 If/Else
+ 7 Switch
+ 8 Arrays
+ 9 Slices
+10 Maps
+11 Range
+12 Functions
+13 Multiple Return Values
+14 Variadic Functions
+15 Closures
+16 Recursion
+17 Pointers
+18 Structs
+19 Methods
+20 Interfaces
+21 Errors
+22 Goroutines
+23 Channels
+24 Channel Buffering
+25 Channel Synchronization
+26 Channel Directions
+27 Select
+28 Timeouts
+29 Non-Blocking Channel Operations
+30 Closing Channels
+31 Range over Channels
+32 Timers
+33 Tickers
+34 Worker Pools
+35 Rate Limiting
+36 Atomic Counters
+37 Mutexes
+38 Stateful Goroutines
+39 Sorting
+40 Sorting by Functions
+41 Panic
+42 Defer
+43 Collection Functions
+44 String Functions
+45 String Formatting
+46 Regular Expressions
+47 JSON
+48 Time
+49 Epoch
+50 Time Formatting / Parsing
+51 Random Numbers
+52 Number Parsing
+53 URL Parsing
+54 SHA1 Hashes
+55 Base64 Encoding
+56 Reading Files
+57 Writing Files
+58 Line Filters
+59 Command-Line Arguments
+60 Command-Line Flags
+61 Environment Variables
+62 Spawning Processes
+63 Exec'ing Processes
+64 Signals
+65 Exit
 ```
