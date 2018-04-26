@@ -26,4 +26,5 @@ func main() {
 	var input string
 	fmt.Scanln(&input)
 	fmt.Println("done")
+	fmt.Println(input)
 }
