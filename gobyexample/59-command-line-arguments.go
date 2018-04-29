@@ -1,3 +1,7 @@
+/*
+$ go build 59-command-line-arguments.go
+$ ./59-command-line-arguments.go a b c d
+*/
 package main
 
 import (
@@ -14,5 +18,3 @@ func main() {
 	fmt.Println(argsWithoutProg)
 	fmt.Println(arg)
 }
-
-// go run file.go a b c d
