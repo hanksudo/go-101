@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"io/ioutil"
 	"os/exec"
@@ -40,4 +41,14 @@ func main() {
 	fmt.Println("> ls -a -l -h")
 	fmt.Println(string(lsOut))
 
+	// streaming bash command
+	cmd := exec.Command("bash", "-c", "for i in {1..5}; do sleep 1;echo ${i}; done")
+	out, _ := cmd.StdoutPipe()
+	cmd.Start()
+
+	scanner := bufio.NewScanner(out)
+	for scanner.Scan() {
+		fmt.Println(scanner.Text())
+	}
+	cmd.Wait()
 }
