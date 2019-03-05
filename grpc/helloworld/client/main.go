@@ -5,11 +5,11 @@ import (
 	"log"
 	"time"
 
-	pb "github.com/hanksudo/go-101/grpc/helloworld/proto/helloworld"
+	pb "../proto/helloworld"
 	"google.golang.org/grpc"
 )
 
-var address = "localhost:10000"
+var address = "localhost:50051"
 
 func main() {
 	conn, err := grpc.Dial(address, grpc.WithInsecure())

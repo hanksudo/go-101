@@ -7,11 +7,12 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/hanksudo/go-101/grpc/helloworld/proto/helloworld"
+	pb "../proto/helloworld"
+
 	"google.golang.org/grpc"
 )
 
-var gRPCPort = flag.Int("grpc-port", 10000, "The gRPC server port")
+var gRPCPort = flag.Int("grpc-port", 50051, "The gRPC server port")
 
 type server struct{}
 
@@ -22,7 +23,7 @@ func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloRe
 
 func main() {
 	flag.Parse()
-	addr := fmt.Sprintf("localhost:%d", *gRPCPort)
+	addr := fmt.Sprintf(":%d", *gRPCPort)
 	lis, err := net.Listen("tcp", addr)
 	if err != nil {
 		log.Fatalln("Failed to listen:", err)
