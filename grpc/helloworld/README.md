@@ -25,3 +25,11 @@ go run client/main.go
 docker build . -t helloworld
 docker run -it -p 50051:50051 helloworld
 ```
+
+## Test by gRPC cli
+
+[gRPC cli](https://github.com/grpc/grpc-go/blob/master/Documentation/server-reflection-tutorial.md#grpc-cli)
+
+```bash
+./grpc_cli ls localhost:50051
+```
