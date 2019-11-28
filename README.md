@@ -2,7 +2,7 @@
 
 Learn Go Programming Language <https://golang.org>
 
-## Install Go (on OS X)
+## Install Go (on Mac)
 
 ```bash
 brew install go
@@ -10,11 +10,11 @@ brew install go
 
 ## Folder structures
 
-- tour - [Tour of Go](http://tour.golang.org/)
-- effective-go - [Effective Go](http://golang.org/doc/effective_go.html)
-- gobyexample - [Go by Example](https://gobyexample.com/)
-- gowiki - [Writing Web Applications - The Go Programming Language](https://golang.org/doc/articles/wiki/)
-
+  - tour - [Tour of Go](http://tour.golang.org/)
+  - effective-go - [Effective Go](http://golang.org/doc/effective_go.html)
+  - gobyexample - [Go by Example](https://gobyexample.com/)
+  - gowiki - [Writing Web Applications - The Go Programming Language](https://golang.org/doc/articles/wiki/)
+  - learn-go-with-tests - [learn go with tests](https://quii.gitbook.io/learn-go-with-tests/)
 
 ## Basic Commands
 
