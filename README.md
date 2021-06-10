@@ -10,11 +10,12 @@ brew install go
 
 ## Folder structures
 
-  - tour - [Tour of Go](http://tour.golang.org/)
-  - effective-go - [Effective Go](http://golang.org/doc/effective_go.html)
-  - gobyexample - [Go by Example](https://gobyexample.com/)
-  - gowiki - [Writing Web Applications - The Go Programming Language](https://golang.org/doc/articles/wiki/)
-  - learn-go-with-tests - [learn go with tests](https://quii.gitbook.io/learn-go-with-tests/)
+- tour - [Tour of Go](http://tour.golang.org/)
+- effective-go - [Effective Go](http://golang.org/doc/effective_go.html)
+- gobyexample - [Go by Example](https://gobyexample.com/)
+- gowiki - [Writing Web Applications - The Go Programming Language](https://golang.org/doc/articles/wiki/)
+- learn-go-with-tests - [learn go with tests](https://quii.gitbook.io/learn-go-with-tests/)
+- [play-with-go.dev](https://play-with-go.dev/)
 
 ## Basic Commands
 
