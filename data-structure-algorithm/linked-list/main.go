@@ -70,4 +70,7 @@ func main() {
 
 	l.DeleteByValue(7)
 	l.PrintList()
+
+	emptyList := LinkedList{}
+	emptyList.DeleteByValue(10)
 }
