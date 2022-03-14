@@ -57,6 +57,20 @@ func (l LinkedList) PrintList() {
 	fmt.Println()
 }
 
+func PrintByRecursive(node *Node) {
+	if node != nil {
+		fmt.Println(node.value)
+		PrintByRecursive(node.next)
+	}
+}
+
+func PrintReverseByRecursive(node *Node) {
+	if node != nil {
+		PrintReverseByRecursive(node.next)
+		fmt.Println(node.value)
+	}
+}
+
 func main() {
 	l := LinkedList{}
 	l.Prepend(&Node{value: 1})
