@@ -32,4 +32,40 @@ func TestSolution(t *testing.T) {
 			t.Errorf("got %d want %d given", got, want)
 		}
 	})
+
+	t.Run("case 4", func(t *testing.T) {
+		got := Solution([]int{1, 1, 2, 3, 5}, 42)
+		want := []int{3, 5, 1, 1, 2}
+
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("got %d want %d given", got, want)
+		}
+	})
+
+	t.Run("extreme_empty", func(t *testing.T) {
+		got := Solution([]int{}, 4)
+		want := []int{}
+
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("got %d want %d given", got, want)
+		}
+	})
+
+	t.Run("single", func(t *testing.T) {
+		got := Solution([]int{1}, 3)
+		want := []int{1}
+
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("got %d want %d given", got, want)
+		}
+	})
+
+	t.Run("double", func(t *testing.T) {
+		got := Solution([]int{5, -1000}, 3)
+		want := []int{-1000, 5}
+
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("got %d want %d given", got, want)
+		}
+	})
 }

@@ -8,12 +8,14 @@ package main
 8
 */
 func Solution(A []int, K int) []int {
-	if K <= 0 || len(A) == K {
+	if K <= 0 || len(A) == 0 || len(A) == K {
 		return A
 	}
 
-	K %= len(A)
-	A = append(A[K-1:], A[0:K-1]...)
+	pos := len(A) - K%len(A)
+	if pos > 0 {
+		A = append(A[pos:], A[0:pos]...)
+	}
 
 	return A
 }
