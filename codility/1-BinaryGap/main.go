@@ -1,5 +1,7 @@
 package main
 
+// https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
+
 func Solution(N int) int {
 	ans := 0
 	last := -1
