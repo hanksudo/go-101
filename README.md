@@ -16,6 +16,7 @@ brew install go
 - gowiki - [Writing Web Applications - The Go Programming Language](https://golang.org/doc/articles/wiki/)
 - learn-go-with-tests - [learn go with tests](https://quii.gitbook.io/learn-go-with-tests/)
 - [play-with-go.dev](https://play-with-go.dev/)
+- [Codility: Online Coding Tests & Programming Assessments](https://www.codility.com/)
 
 ## Basic Commands
 
