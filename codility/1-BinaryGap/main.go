@@ -1,4 +1,4 @@
-package binarygap
+package main
 
 func Solution(N int) int {
 	ans := 0

@@ -1,4 +1,4 @@
-package binarygap
+package main
 
 import (
 	"testing"
