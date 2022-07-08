@@ -3,7 +3,6 @@ package main
 // https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -26,8 +25,4 @@ func Solution(A []int) int {
 		}
 	}
 	return ans
-}
-
-func main() {
-	fmt.Println(Solution([]int{3, 1, 2, 4, 3}) == 1)
 }
