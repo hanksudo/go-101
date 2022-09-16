@@ -68,6 +68,7 @@ gowatch -f main.go
 
 ## References
 
+- [The Go Programming Language Specification - The Go Programming Language](https://go.dev/ref/spec)
 - [Tour of Go - exercise solutions](https://github.com/golang/tour/tree/master/solutions)
 - [GitHub - enocom/gopher-reading-list: A curated selection of blog posts on Go](https://github.com/enocom/gopher-reading-list)
 - [How to Write Go Code - The Go Programming Language](http://golang.org/doc/code.html)
