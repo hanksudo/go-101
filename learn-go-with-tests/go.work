@@ -4,4 +4,10 @@ use (
 	./00-helloworld
 	./01-integers
 	./02-iteration
+	./03-arrays-slices
+	./04-structs-methods-interfaces
+	./05-pointers-errors
+	./06-maps
+	./07-dependency-injection
+	./08-mocking
 )
