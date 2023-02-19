@@ -6,9 +6,6 @@
 # test
 go test -v
 go test -bench=.
-
-# Test all
-make test
 ```
 
 ## References
