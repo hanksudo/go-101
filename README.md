@@ -4,6 +4,8 @@ Learn Go Programming Language <https://golang.org>
 
 ## Install Go (on Mac)
 
+- [Download and install - The Go Programming Language](https://go.dev/doc/install)
+
 ```bash
 brew install go
 ```
