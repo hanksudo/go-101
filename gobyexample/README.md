@@ -16,3 +16,12 @@ go build 01-hello-world.go
 go install github.com/hanksudo/gorerun@latest
 gorerun -f 01-hello-world.go
 ```
+
+## Make filename's number up to date
+
+```bash
+# 1. update list.txt
+
+# 2. run script
+go run . rename-files.go
+```
