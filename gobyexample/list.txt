@@ -19,12 +19,10 @@
 [Structs](https://gobyexample.com/structs)
 [Methods](https://gobyexample.com/methods)
 [Interfaces](https://gobyexample.com/interfaces)
-
 [Struct Embedding](https://gobyexample.com/struct-embedding)
 [Generics](https://gobyexample.com/generics)
 [Errors](https://gobyexample.com/errors)
 [Goroutines](https://gobyexample.com/goroutines)
-
 [Channels](https://gobyexample.com/channels)
 [Channel Buffering](https://gobyexample.com/channel-buffering)
 [Channel Synchronization](https://gobyexample.com/channel-synchronization)
