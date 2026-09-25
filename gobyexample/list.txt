@@ -71,6 +71,7 @@
 [Command-Line Flags](https://gobyexample.com/command-line-flags)
 [Command-Line Subcommands](https://gobyexample.com/command-line-subcommands)
 [Environment Variables](https://gobyexample.com/environment-variables)
+[Logging](https://gobyexample.com/logging)
 [HTTP Client](https://gobyexample.com/http-client)
 [HTTP Server](https://gobyexample.com/http-server)
 [Context](https://gobyexample.com/context)
